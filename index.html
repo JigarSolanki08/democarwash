@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cwg</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- preloader -->
+    <div class="preloader">
+        <img src="D:\thar\carwashing\preloader.gif" alt="loaderpre" class="preloader__item">
+    </div>
+    <!-- end preloader -->
+    <!-- header -->
+    <header class="header" id="header">
+        <!-- banner -->
+        <div class="banner">
+            <h1 class="banner__title w3-cursive">car Wash</h1>
+            <div class="banner__icons">
+               <a href="#" class="banner__social-icon">
+                <i class="fa fa-instagram"></i>
+               </a>
+               <a href="#" class="banner__social-icon">
+                <i class="fa fa-facebook"></i>
+               </a>
+               <a href="#" class="banner__social-icon">
+                <i class="fa fa-twitter"></i>
+               </a>
+               <a href="#" class="banner__social-icon">
+                <i class="fa fa-google"></i>
+               </a>
+            </div>
+        </div>
+        <!-- end banner -->
+        <article class="videocontainer">
+            <video class="video__item" autoplay muted loop>
+             <source src="D:\thar\carwashing\mycarwash.mp4" type="video/mp4">
+             <!-- <source src="../mycarwash.mp4" type="video/ogv"> -->
+             <source src="D:\thar\carwashing\mywash.webm" type="video/webm">
+             Your Browser Does Not Support Video Tag
+            </video>
+        </article>
+        <div class="navbtn">
+            <i class="fa fa-bars"></i>
+        </div>
+        <nav class="nav">
+            <ul class="nav__links">
+                <li><a href="" class="nav__single-link"><img src="D:\thar\carwashing\caricon.jpeg" alt=""></a></li>
+                <li><a href="#header" class="nav__single-link">Home</a></li>
+                <li><a href="#about" class="nav__single-link">About</a></li>
+                <li><a href="#free" class="nav__single-link">Lucky Car</a></li>
+                <li><a href="#contact" class="nav__single-link">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- video on off -->
+        <div class="video__switch-container">
+<div class="video__switch">
+    <span>on</span>
+    <span>off</span>
+    <div class="video__switch-btn"></div>
+</div>
+
+        </div>
+    </header>
+    <!-- end header -->
+    <section class="about section-padding" id="about">
+         <div class="grid-container grid-container-medium-2">
+            <article class="about-container">
+                <div class="section-title">
+                   <h1 class="section-title__name">our story</h1>
+                   <div class="section-title__underline"></div>
+                   <p class="section-title__text">Lorem ipsum dolor,
+                     sit amet consectetur adipisicing elit. 
+                     Debitis ipsam nesciunt possimus quisquam obcaecati minima mollitia doloribus reprehenderit repellat distinctio?</p>
+                </div>
+                <div class="about__img">
+                    <img src="D:\thar\carwashing\mc3.jpeg" alt="photo of chaay cup" height="40%" width="40%">
+                </div>
+            </article>
+            <article class="about-container">
+                <div class="section-title">
+                   <h1 class="section-title__name">what we do</h1>
+                   <div class="section-title__underline"></div>
+                   <p class="section-title__text">Lorem ipsum dolor,
+                     sit amet consectetur adipisicing elit. 
+                     Debitis ipsam nesciunt possimus quisquam obcaecati minima mollitia doloribus reprehenderit repellat distinctio?</p>
+                </div>
+                <div class="about__img">
+                    <img src="D:\thar\carwashing\mc1.jpg" alt="photo of chaay cup" height="40%" width="40%">
+                </div>
+            </article>
+         </div>
+
+    </section>
+    <section id="free">
+        <div class="freewash">
+            <h1 class="w3-cursive">To Free Car Wash</h1>
+            <form id="myForm">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <button type="button" id="submitBtn" onclick="displayFullName()">Submit</button>
+            </form>
+            <h1 class="w3-cursive">Lucky Car Owner:</h1>
+            <div id="result"></div>
+        
+        </div>
+    </section>
+    <section id="contactt">
+        <img id="contact" src="D:\thar\carwashing\map.jpg" class="w3-image w3-greyscale" alt="Map" style="width:100%">
+
+        <div class="w3-container w3-blue-grey w3-grayscale-min w3-xlarge w3-padding-top-32">
+        
+        <h1 class="w3-center w3-jumbo">Contact</h1>
+        
+        <p>Find us at some [address] or call us at 123456</p>
+        <p>We offer full-service. We understand your needs and we will cater the food to satisfy the biggerst criteria of look and style.</p>
+        
+        <p class="w3-xxlarge"><b>Reserve</b> a car wash, ask for today's special or just send us a message:</p>
+        
+        <form action="/action_page.php" target="_blank">
+        
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+        
+        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many car" required name="People"></p>
+        
+        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2023-10-23 08:00"></p>
+        
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+        
+        <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+        
+        </form>
+        
+        <p class="w3-center w3-xlarge w3-padding-32">Made By <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank">sjigar2000@gmail.com</a></p>
+        
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
